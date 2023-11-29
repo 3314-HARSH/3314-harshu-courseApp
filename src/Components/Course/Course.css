@@ -1,0 +1,64 @@
+.course {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.course img {
+  width: 12rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+
+.course__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.4rem 0;
+}
+
+.course h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.course p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: auto;
+}
+
+.course span {
+  font-size: 1.6rem;
+}
+
+.course.sold-out {
+  color: #888;
+}
+
+.course.sold-out img {
+  filter: grayscale();
+  opacity: 0.8;
+}
+.course__addOn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #edc84b;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #e9bb24;
+}
